@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujan Poudel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c92ea10fab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--This is the header Section-->
+    <div id="header">
+        <div class="container">
+            <!--This is Navigation Section-->
+            <nav>
+                <img src="images/logo_images.webp" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Electrical and Electronics (Communication) Engineer</p>
+                <h1>Hi, I am <span>Sujan Poudel</span>  <br> from Nepal.</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------------------About---------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/personal_photo.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am an engineer and programmer who loves signal processing, satellite technology, networking, telecommunication, 
+                    AR/VR, and web development. I have skills and experience in using various software and hardware tools 
+                    for creating applications and solutions</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+<!-- This is for my Skills Section-->
+                    <div class="tab-contains active-tab" id="skills">
+                        <ul>
+                            <li> <span>Proteus/ Multi-sim/ Matlab/ Cisco Packet Tracer/ NS2/ GNS3/ L-Spice</span><br> Circuit and Network Simulating/ Designing</li>
+                            <li> <span>Arduino/ Node MCU/ Raspberry-Pi/ Different Sensors</span><br> Implementing Local/ Cloud Based Automation System</li>
+                            <li> <span>C/ C++/ Python/ Java</span><br> Creating Console and Desktop Applications</li>
+                        </ul>
+                    </div>
+<!--This is for my Education Section-->
+                    <div class="tab-contains" id="education">
+                        <ul>
+                            <li> <span>Proteus/ Multi-sim/ Matlab/ Cisco Packet Tracer/ NS2/ GNS3/ L-Spice</span><br> Circuit and Network Simulating/ Designing</li>
+                            <li> <span>Arduino/ Node MCU/ Raspberry-Pi/ Different Sensors</span><br> Implementing Local/ Cloud Based Automation System</li>
+                            <li> <span>C/ C++/ Python/ Java</span><br> Creating Console and Desktop Applications</li>
+                        </ul>
+                    </div>
+<!--This is for my Experience Section-->
+                    <div class="tab-contains" id="experience">
+                        <ul>
+                            <li> <span>Proteus/ Multi-sim/ Matlab/ Cisco Packet Tracer/ NS2/ GNS3/ L-Spice</span><br> Circuit and Network Simulating/ Designing</li>
+                            <li> <span>Arduino/ Node MCU/ Raspberry-Pi/ Different Sensors</span><br> Implementing Local/ Cloud Based Automation System</li>
+                            <li> <span>C/ C++/ Python/ Java</span><br> Creating Console and Desktop Applications</li>
+                        </ul>
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Project-->
+
+<div id="project">
+    <div class="container">
+        <h1>Project and Research</h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="images/personal_photo.jpg" >
+                <div class="layer">
+                    <h3>Automated Multilevel Room Temperature Control System</h3>
+                    <p>-Design a circuit to control fan state and speed based on room temperature using LM35 (temperature sensor) a comparator circuit and a motor driver, with a customized reference level.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/personal_photo.jpg" >
+                <div class="layer">
+                    <h3>Smart dustbin for physically disabled people</h3>
+                    <p>The design is for a smart waste container that uses a servo motor and IR sensor to detect users and open the lid, with the aim of assisting physically disabled users. The dustbin can be remote operated for waste disposal by RF transmitter and receiver with encoder and decoder</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/personal_photo.jpg" >
+                <div class="layer">
+                    <h3>Solid waste monitoring system</h3>
+                    <p>-The system monitors trash levels with ultrasonic sensors and sends data wirelessly to a central server. Waste authorities can access the information via a web interface to improve garbage collection efficiency.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!--Contact Information-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>isujanpoudel@gmail.com</p>
+                <p>+977 9809288922</p>
+                <div class="social-icons">
+                    <a href="https://github.com/sujanpogithub?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sujannpoudel/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Java Script-->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontains = document.getElementsByClassName("tab-contains");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontain of tabcontains){
+            tabcontain.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+</body>
+</html>
