@@ -384,3 +384,33 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
 }
+
+#aproject{
+    padding: 10px;
+    margin: 20px 0;
+    
+    
+}
+
+#aproject h1{
+    
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.aproject-list{
+    margin: 10px 0;
+    display: block;
+}
+.aproject-list p{ 
+    margin: 10px 0;
+    display: inline-block;
+    
+    
+}
+.aproject-list p span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #ff004f;
+    padding: 20px 0;
+}
