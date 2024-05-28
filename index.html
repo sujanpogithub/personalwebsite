@@ -15,12 +15,15 @@
             <!--This is Navigation Section-->
             <nav>
                 <img src="images/logo_images.webp" class="logo">
-                <ul>
+                <ul id = "sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
             </nav>
 
             <div class="header-text">
@@ -40,51 +43,72 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>I am an engineer and programmer who loves signal processing, satellite technology, networking, telecommunication, 
-                    AR/VR, and web development. I have skills and experience in using various software and hardware tools 
-                    for creating applications and solutions</p>
+                <p>Energetic Electrical and Electronics Engineer | Focused on Communication Engineering | Focused on Wireless Communication, Machine Learning, Data Communication and Signal Processing | Proficient in MATLAB, Python, and GNU Radio | Seeking Opportunities to Excel in Master's Program</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('volunteering')">Volunteering</p>
+                        <p class="tab-links" onclick="opentab('awards')">Awards</p>
                     </div>
 <!-- This is for my Skills Section-->
                     <div class="tab-contains active-tab" id="skills">
                         <ul>
                             <li> <span>Proteus/ Multi-sim/ Matlab/ Cisco Packet Tracer/ NS2/ GNS3/ L-Spice</span><br> Circuit and Network Simulating/ Designing</li>
                             <li> <span>Arduino/ Node MCU/ Raspberry-Pi/ Different Sensors</span><br> Implementing Local/ Cloud Based Automation System</li>
-                            <li> <span>C/ C++/ Python/ Java</span><br> Creating Console and Desktop Applications</li>
+                            <li> <span>C/ C++/ Python</span><br> Embedded C/ OOP/ Numpy/ Pandas/ Scikit/ CNN/ ML</li>
+                            <li> <span>HTML/CSS/Js</span><br> Creating Responsive Websites</li>
                         </ul>
                     </div>
 <!--This is for my Education Section-->
                     <div class="tab-contains" id="education">
                         <ul>
-                            <li> <span>Proteus/ Multi-sim/ Matlab/ Cisco Packet Tracer/ NS2/ GNS3/ L-Spice</span><br> Circuit and Network Simulating/ Designing</li>
-                            <li> <span>Arduino/ Node MCU/ Raspberry-Pi/ Different Sensors</span><br> Implementing Local/ Cloud Based Automation System</li>
-                            <li> <span>C/ C++/ Python/ Java</span><br> Creating Console and Desktop Applications</li>
+                            <li> <span>Kathmandu University, Dhulikhel, Nepal</span><br> Bachelor of Electrical and Electronics Engineering <br>Aug. 2018 - Jun. 2023 </li>
+                            <li> <span>Oxford Secondary School, Nawalpur, Nepal</span><br>National Education Board - General Science <br>Jun. 2016 - Apr. 2018</li>
+                            <li> <span>Viddhya Jyoti English Boarding School, Madi, Nepal</span><br> School Leaving Certificate <br>Apr. 2006 - Apr. 2016</li>
                         </ul>
                     </div>
 <!--This is for my Experience Section-->
                     <div class="tab-contains" id="experience">
                         <ul>
-                            <li> <span>Proteus/ Multi-sim/ Matlab/ Cisco Packet Tracer/ NS2/ GNS3/ L-Spice</span><br> Circuit and Network Simulating/ Designing</li>
-                            <li> <span>Arduino/ Node MCU/ Raspberry-Pi/ Different Sensors</span><br> Implementing Local/ Cloud Based Automation System</li>
-                            <li> <span>C/ C++/ Python/ Java</span><br> Creating Console and Desktop Applications</li>
+                            <li> <span>Department of Electrical and Electronics Engineering, Kathmandu University</span><br>Electrical and Electronics (Communication) Engineer <br>August 2023 - Present </li>
+                            <li> <span>Technical Operation Center, Dish Media Pvt. Ltd., Nepal</span><br> Broadcast Intern (Academic Internship) <br>Jan 2023 - Feb 2023
+                            </li>
+                            <li> <span>Subisu Cablenet Ltd.</span><br> Network Administrator <br>May. 2023 - Jul. 2023</li>
+                        </ul>
+                    </div>
+                
+                    <div class="tab-contains " id="volunteering">
+                        <ul>
+                            <li> <span>Society Of Electrical and Electronics Engineers, Kathmandu University</span><br> Event Head <br>
+                                Event Head of all technology-related events like Hackathon, Online Circuit Competition, and Electronic Traning Workshops.
+                                <br>Sept. 2022 - Sept. 2022</li>
+                            <li> <span>Society Of Electrical and Electronics Engineers , Kathmandu University</span><br> Instructor <br>
+                                Instructor of two-day Raspberry-Pi training to the Undergraduate students of Electrical and Electronics Engineering at Kathmandu University, DoEEE
+                                <br>Jul 2022 - Jul 2022</li>
                         </ul>
                     </div>
 
+                    <div class="tab-contains " id="awards">
+                        <ul>
+                            <li> <span>Direct Enrollment from KU Employment Promotion Program for a year</span><br> Securing highest grade in the batch of 2018 at the 
+                                Department of Electrical and Electronics Engineering, Kathmandu University</li>
+                            <li> <span>Academic Scholarship for semester I, II and IV at Kathmandu University, Nepal</span><br> </li>
+                            <li> <span>Scholarship for Intermediate Science at Oxford Secondary School, Nawalpur, Nepal </span><br> </li>
+                        </ul>
+                    </div>
 
             </div>
         </div>
     </div>
 </div>
 
-<!--Project-->
+<!--Licenses and Certification-->
 
 <div id="project">
     <div class="container">
-        <h1>Project and Research</h1>
+        <h1>Licenses & Certificates</h1>
         <div class="project-list">
             <div class="work">
                 <img src="images/personal_photo.jpg" >
@@ -120,6 +144,27 @@
     </div>
 </div>
 
+<!--Projects-->
+<div id="aproject">
+    <div class="container">
+        <h1>Lists of the Academic Projects</h1>
+        <div class="aproject-list project1">
+            <p><span>GFSK modulation and demodulation of Sanosat-1</span><br>This system involves the study of modulation and demodulation scheme used by Sanosat-1, a CubeSat launched by Orion Space. It involves why GFSK scheme is better choice over other scheme. And there is replication of the scheme in GNU Radio to study different digital communication parameters.</p>
+        </div>
+        <div class="aproject-list project2">
+            <p><span>Solid waste monitoring system</span><br>The system monitors trash levels with ultrasonic sensors and sends data wirelessly to a central server. Waste authorities can access the information via a web interface to improve garbage collection efficiency.</p>
+        </div>
+        <div class="aproject-list project3">
+            <p><span>Smart dustbin for physically disabled people</span><br>The design is for a smart waste container that uses a servo motor and IR sensor to detect users and open the lid, with the aim of assisting physically disabled users. The dustbin can be remote operated for waste disposal by RF transmitter and receiver with encoder and decoder.</p>
+        </div>
+        <div class="aproject-list project3">
+            <p><span>Automated Multilevel Room Temperature Control System</span><br>-Design a circuit to control fan state and speed based on room temperature using LM35 (temperature sensor) a comparator circuit and a motor driver, with a customized reference level.</p>
+        </div>
+
+    </div>
+
+</div>
+
 <!--Contact Information-->
 
 <div id="contact">
@@ -127,23 +172,28 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p>isujanpoudel@gmail.com</p>
-                <p>+977 9809288922</p>
+                <p> <i class="fa-solid fa-envelope"></i> isujanpoudel@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +977 9809288922</p>
                 <div class="social-icons">
                     <a href="https://github.com/sujanpogithub?tab=repositories"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/sujannpoudel/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                 </div>
+                <a href="images/Sujan Poudel_new_CV.pdf" download class="btn btn2">Download CV</a>
             </div>
+
             <div class="contact-right">
-                <form action="">
+                <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="text" name="email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
-                    <button type="submit">Submit</button>
+                    <textarea name="Message" rows="3" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Sujan</p>
     </div>
 </div>
 
@@ -163,6 +213,17 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
+</script>
+
+<script>
+    var sidemen = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemen.style.right = "0";
+    }
+    function closemenu(){
+        sidemen.style.right = "-200px";
+    }
 </script>
 
 
